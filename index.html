@@ -8,6 +8,27 @@
 		<br>e-mail:2243652046@qq.com <br>qq:2243652046 </font></font></p>
 		<p><font color="#999999" face="Arial, Helvetica, sans-serif">Thank you for your support! </font></p>
 		<p><font color="#999999"><font face="Arial, Helvetica, sans-serif">   Design by Mr.Zhang <br></font></font></p>
-		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=1357447444&auto=1&height=66"></iframe>
+		<audio loop src="C:\Users\miracle\Documents\GitHub\yoursunset.github.io\music1.mp3" id="audio" autoplay preload="auto">该浏览器不支持audio属性
+		</audio><script type="text/javascript">//--创建页面监听，等待微信端页面加载完毕 触发音频播放
+document.addEventListener('DOMContentLoaded', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('audio');
+            audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        }, false);
+    }
+    audioAutoPlay();
+});
+//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+document.addEventListener('touchstart', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('audio');
+            audio.play();
+    }
+    audioAutoPlay();
+});
+</script>
+
 	</body>
 </html>
