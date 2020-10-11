@@ -1,0 +1,272 @@
+#home {
+    margin: 0 auto;
+    width: 80%;/*ԭʼ65*/
+    min-width: 980px;/*ҳ�涥���Ŀ���*/
+    background-color: rgba(245, 245, 245, 0.2);
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+body {
+    background: rgba(12, 100, 129, 1) url('https://www.17sucai.com/preview/1153904/2018-05-28/html5help/img/demo-1-bg.jpg') fixed no-repeat;
+    background-position: 50% 5%; 
+    background-size: cover;
+}
+#blogTitle {
+    height: 100px;  /*�߶�*/
+    clear: both;
+    background-color: rgba(245, 245, 245, 0);
+}
+#blogTitle h1 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.8em;/*ԭʼ 1.6em*/
+    margin-top: 10px;/*ԭʼ 15px */
+    background-color: rgba(255, 255, 255, 0);
+}
+#blogTitle h2 {
+    font-weight: normal;
+    font-family: "���Ŀ���";
+    font-size: 18px;/*ԭʼ 16px ��font-size: 1.0rem;*/      
+    line-height: 1.8;
+    color: #ccc;
+    font-weight: bold;
+    text-align: right;
+    float: right; 
+}
+#blogTitle h2 :hover {
+    margin-left: 30px;
+    color: red;
+    text-decoration: none;
+}
+#navigator{
+    background-color: rgba(125, 125, 125, 0.9);
+}
+#navList a:link, #navList a:visited, #navList a:active{
+    color: #ebebeb;
+    font-size: 18px;
+    font-weight: bold;
+}
+.blogStats{
+    color: #ebebeb;
+}
+.postTitle {
+    border-left: 8px solid rgba(194,194,194, 0.68);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    float: right;
+    width: 100%;
+    clear: both;
+}
+.postTitle a:link, .postTitle a:visited, .postTitle a:active {
+    color: #21759b;
+    transition: all 0.4s linear 0s;
+}
+.postTitle a:hover {
+    margin-left: 30px;
+    color: #ee105a;
+    text-decoration: none;
+}
+.postCon {
+    float: right;
+    line-height: 1.5em;
+    width: 100%;
+    clear: both;
+    padding: 10px 0;
+}
+
+.day .postTitle a {
+    padding-left: 10px;
+}
+.day {
+    background: rgba(255, 255, 255, 0.4);
+}
+/*���¸�����Ϣ*/
+.postDesc {   
+    
+    color: #757575;
+    float: left;
+    width: 100%;
+    clear: both;
+    text-align: left;     
+    font-family: "�����п�" , "�����п�" , "�����п�" ,"�����п�";
+    font-size: 13px;
+    padding-right: 20px;/*5px  padding-left: 90px;posted ����ʱ����߾���*/
+    margin-top: 20px;
+    line-height: 1.8;
+    padding-bottom: 35px;
+}
+
+.newsItem, .catListEssay, .catListLink, .catListNoteBook, .catListTag, .catListPostCategory, 
+.catListPostArchive, .catListImageCategory, .catListArticleArchive, .catListView, 
+.catListFeedback, .mySearch, .catListComment, .catListBlogRank, .catList, .catListArticleCategory ,#blog-calendar
+{
+    background: rgba(255, 255, 255, 0.5);
+    margin-bottom: 35px;
+    word-wrap: break-word;
+}
+
+.CalTitle{
+    background: rgba(255, 255, 255, 0);
+}
+.catListTitle{
+    background-color: rgba(149,149,149, 0.9);
+}
+
+#topics{
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.c_ad_block{
+    display: none;
+}
+
+#tbCommentBody{
+    width: 100%;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#q{background: rgba(255, 255, 255, 0);}
+
+.CalNextPrev{background: rgba(255, 255, 255, 0);}
+
+.cnblogs_code {
+    background: rgb(68, 68, 68);
+}
+.cnblogs_code div {
+    background: rgb(68, 68, 68);
+}
+.cnblogs_code_toolbar a:visited img {
+    background-color: #444444 !important;
+}
+.prettyprint, pre.prettyprint {
+    background-color: #444444;
+    /* border: 1px solid #272822; */
+}
+
+#blogTitle h1{
+     font-family: "�����п�";
+     font-size:50px;
+     
+}
+
+
+
+a{
+transition:color 1s;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background: rgba(255, 255, 255, 1);
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+.input_my_zzk{
+background: rgba(255, 255, 255, 0);
+}
+.scrollCls {
+    position: fixed;
+    top: 0;
+    height: 3px;
+    background: orange;
+    transiton-property: width,background;
+    transition-duration: 1s,1s;
+    z-index: 99999;
+}
+
+
+
+
+
+/* ѩ */
+#Snow{
+position: fixed;
+ left: 0px; 
+top: 0px; 
+z-index: 4192575111111;
+ pointer-events: none;
+}
+/* ������ */
+.waifu-tips {
+    opacity: 0;
+    width: 250px;
+    height: 70px;
+    margin: -20px 20px;
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.62);
+    border-radius: 18px;
+    background-color: #f5f5f5ad;
+    box-shadow: 0 3px 15px 2px #cacfd2;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    animation-delay: 5s;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
+}
+/* css88 0.1����*/
+.prettyprint,pre.prettyprint {
+    background-color: #444444;
+    /*border: 1px solid #272822;*/
+    overflow: hidden;
+    padding: 0px;
+    margin: 20px 0;
+    font: 14px/20px 'courier new';
+    color: #666;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.prettyprint.linenums,
+pre.prettyprint.linenums {
+  -webkit-box-shadow: inset 40px 0 0 #39382E, inset 41px 0 0 #464741;
+  -moz-box-shadow: inset 40px 0 0 #39382E, inset 41px 0 0 #464741;
+  box-shadow: inset 40px 0 0 #39382E, inset 41px 0 0 #464741;
+}
+.prettyprint.linenums ol,
+pre.prettyprint.linenums ol {
+    margin: 0 0 0 33px;
+}
+.prettyprint.linenums ol li,
+pre.prettyprint.linenums ol li {
+    padding-left: 12px;
+  color: #bebec5;
+  line-height: 20px;
+  margin-left: 0;
+  list-style: decimal;
+}
+.prettyprint ol.linenums{ margin-bottom: 0;/*margin-bottom: -8px; margin-top:-8px; margin-right: -8px; position:relative;*/background-color: #272822; padding: 8px}
+.prettyprint .com { color: #93a1a1; }
+.prettyprint .lit { color: #AE81FF; }
+.prettyprint .pun,
+.prettyprint .opn,
+.prettyprint .clo { color: #F8F8F2; }
+.prettyprint .fun { color: #dc322f; }
+.prettyprint .str,
+.prettyprint .atv { color: #E6DB74; }
+.prettyprint .kwd,
+.prettyprint .tag { color: #F92659; }
+.prettyprint .typ,
+.prettyprint .atn,
+.prettyprint .dec,
+.prettyprint .var { color: #A6E22E; }
+.prettyprint .pln { color: #66D9EF; }
