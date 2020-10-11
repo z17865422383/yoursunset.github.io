@@ -8,7 +8,55 @@
 	<br>e-mail:2243652046@qq.com <br>qq:2243652046 </font></font></p>
 	<p><font color="#999999" face="Arial, Helvetica, sans-serif">Thank you for your support! </font></p>
 	<p><font color="#999999"><font face="Arial, Helvetica, sans-serif">   Design by Mr.Zhang <br></font></font></p>
-	<audio loop src="https://yoursunset.github.io/music1.mp3" id="audio" autoplay preload="auto"></audio>
+		
+			<!--背景 -->
+	<link rel="stylesheet" href="/css/stylesheet.css" />
+	<link id="MainCss" rel="stylesheet" href="/css/MainCss.css" />
+	<link type="text/css" rel="stylesheet" href="/css/text.css" />
+	<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/css/mobile-style.css" />
+
+
+		<!--鼠标点击事件 -->
+	<script src="/js/mouse-click.js" defer></script>
+	<canvas width="1777" height="841" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></canvas>
+		<!-- 背景动画 -->
+	<canvas id="c_n9" width="1920" height="990" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+	<script src="/js/canvas-nest.min.js" defer></script>	
+		<!-- 鼠标爱心 -->
+	<script src="/js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript">
+	var a_idx = 0;
+	jQuery(document).ready(function($) {
+	    $("body").click(function(e) {
+		var a = new Array("❤","🍊","❤","🍊","🍊","❤","🍊","❤");
+		//-------------------1-2-3-4-5 -1-2 - 1  My Love! 
+		var $i = $("<span></span>").text(a[a_idx]);
+		a_idx = (a_idx + 1) % a.length;
+		var x = e.pageX,
+		y = e.pageY;
+		$i.css({
+		    "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+		    "top": y - 20,
+		    "left": x,
+		    "position": "absolute",
+		    "font-weight": "bold",
+		    "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"
+		});
+		$("body").append($i);
+		$i.animate({
+		    "top": y - 180,
+		    "opacity": 0
+		},
+		1500,
+		function() {
+		    $i.remove();
+		});
+	    });
+	});
+	</script>
+		
+		
+	<audio loop src="/music1.mp3" id="audio" autoplay preload="auto"></audio>
 	<script type="text/javascript"> 	//--创建页面监听，等待微信端页面加载完毕 触发音频播放
 		document.addEventListener('DOMContentLoaded', function () 
 		{
